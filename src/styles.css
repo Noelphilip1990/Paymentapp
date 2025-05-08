@@ -25,3 +25,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     gap: 1rem !important;
 }
 
+
+.mdc-switch__track::after {
+    background-color: green !important;
+}

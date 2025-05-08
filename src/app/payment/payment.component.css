@@ -3,6 +3,9 @@
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
     min-height: 80vh;        /* Ensure full viewport height */
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
   }
   
   .expiry-cvv {
@@ -38,4 +41,19 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .example-margin {
+    margin: 0px 10px 0px 10px;
   }

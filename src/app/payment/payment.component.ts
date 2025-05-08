@@ -5,10 +5,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-import { MatButton } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-payment',
@@ -20,7 +21,9 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
         ReactiveFormsModule,
         MatCardModule,
         MatFormFieldModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatSlideToggleModule,
+        FormsModule
   ],
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.css'
