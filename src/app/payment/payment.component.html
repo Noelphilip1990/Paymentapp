@@ -1,0 +1,78 @@
+<div class="payment-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Payment</mat-card-title>
+      </mat-card-header>
+      <br>
+      <mat-card-content>
+        <form [formGroup]="paymentForm" (ngSubmit)="pay()">
+          <br>
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Card Number</mat-label>
+            <input matInput formControlName="cardNumber" type="text">
+            <mat-error *ngIf="paymentForm.get('cardNumber')?.invalid">
+              {{ getErrorMessage('cardNumber') }}
+            </mat-error>
+          </mat-form-field>
+          <br>
+          <br>
+          <div class="expiry-cvv">
+            <mat-form-field appearance="outline">
+              <mat-label>Expiry Month</mat-label>
+              <input matInput formControlName="expiryMonth" type="text">
+              <mat-error *ngIf="paymentForm.get('expiryMonth')?.invalid">
+                {{ getErrorMessage('expiryMonth') }}
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Expiry Year</mat-label>
+              <input matInput formControlName="expiryYear" type="text">
+              <mat-error *ngIf="paymentForm.get('expiryYear')?.invalid">
+                {{ getErrorMessage('expiryYear') }}
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>CVV</mat-label>
+              <input matInput formControlName="cvv" type="password">
+              <mat-error *ngIf="paymentForm.get('cvv')?.invalid">
+                {{ getErrorMessage('cvv') }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <br>
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Name on Card</mat-label>
+            <input matInput formControlName="nameOnCard" type="text">
+            <mat-error *ngIf="paymentForm.get('nameOnCard')?.invalid">
+              {{ getErrorMessage('nameOnCard') }}
+            </mat-error>
+          </mat-form-field>
+        <span class="info">Important: Owner Allah Gave money.For Allah Choice.</span>
+        <div class="flex">
+          <div class="button-group">
+            <button mat-fab extended color="primary" type="submit" [disabled]="loading">
+              <ng-container *ngIf="loading" class="spinner">
+                <mat-spinner diameter="20"></mat-spinner>
+              </ng-container>
+              <ng-container *ngIf="!loading" style="display: flex; align-items: center; justify-content: center;">
+                <mat-icon>favorite</mat-icon> PAY
+              </ng-container>
+            </button>
+          </div>
+          <div class="button-group">
+            <button mat-fab extended color="primary" type="submit" [disabled]="loading">
+              <ng-container *ngIf="loading" class="spinner">
+                <mat-spinner diameter="20"></mat-spinner>
+              </ng-container>
+              <ng-container *ngIf="!loading" style="display: flex; align-items: center; justify-content: center;">
+                <mat-icon>favorite</mat-icon> TAKE
+              </ng-container>
+            </button>
+          </div>
+        </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>

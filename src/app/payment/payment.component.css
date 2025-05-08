@@ -1,0 +1,41 @@
+.payment-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 80vh;        /* Ensure full viewport height */
+  }
+  
+  .expiry-cvv {
+    display: flex;
+    gap: 16px; /* Adjust spacing as needed */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 16px;
+  }
+  
+  .spinner {
+    display: inline-block;
+    margin-right: 8px; /* Space between spinner and text */
+  }
+  
+  .mat-mdc-extended-fab {
+    border: 2px solid rgb(250, 122, 144);
+    color:rgb(250, 122, 144);
+    background-color: white;
+  }
+  
+  .mat-mdc-extended-fab:hover {
+    color:white ;
+    background-color: rgb(250, 122, 144);
+  }
+
+  .flex {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }

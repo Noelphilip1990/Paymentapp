@@ -1,0 +1,27 @@
+.mat-mdc-card {
+    background-color: rgb(255, 238, 250) !important; /* !important may be needed */
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-card-title, .mat-mdc-card-subtitle {
+    color: white !important
+}
+
+.mat-mdc-card-title {
+    padding-bottom: 10px;
+}
+
+.mat-mdc-card-header {
+    background-color: #a25c9b !important;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.mat-mdc-fab-base .mdc-button__label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+}
+
