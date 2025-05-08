@@ -59,6 +59,17 @@
               {{ getErrorMessage('nameOnCard') }}
             </mat-error>
           </mat-form-field>
+          <br>
+          <span>OR</span>
+          <br>
+          <br>
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Muslim ID</mat-label>
+            <input matInput formControlName="nameOnMuslimId" type="text">
+            <mat-error *ngIf="paymentForm.get('nameOnMuslimId')?.invalid">
+              {{ getErrorMessage('nameOnMuslimId') }}
+            </mat-error>
+          </mat-form-field>
         <span class="info">Important: Owner Allah Gave money.For Allah Choice.</span>
         <div class="flex">
           <div class="button-group">
@@ -71,6 +82,7 @@
               </ng-container>
             </button>
           </div>
+          
           <div class="button-group">
             <button mat-fab extended color="primary" type="submit" [disabled]="loading">
               <ng-container *ngIf="loading" class="spinner">

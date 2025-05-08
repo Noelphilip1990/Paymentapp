@@ -38,7 +38,8 @@ export class PaymentComponent {
       expiryMonth: ['', [Validators.required, Validators.pattern('^[0-9]{2}$')]],
       expiryYear: ['', [Validators.required, Validators.pattern('^[0-9]{2}$')]],
       cvv: ['', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
-      nameOnCard: ['', Validators.required]
+      nameOnCard: ['', Validators.required],
+      nameOnMuslimId: ['']
     });
   }
 
