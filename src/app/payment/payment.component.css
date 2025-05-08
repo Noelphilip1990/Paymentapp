@@ -45,6 +45,9 @@
 
   .example-h2 {
     margin: 10px;
+    color: #00a500;
+    font-size: 20px;
+    margin-left: 0px;
   }
   
   .example-section {
