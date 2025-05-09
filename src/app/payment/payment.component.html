@@ -9,7 +9,7 @@
       </section>
     </mat-card-content>
   </mat-card>  
-  <mat-card>
+  <mat-card style="width: 80%;">
       <mat-card-header>
         <mat-card-title>Payment</mat-card-title>
       </mat-card-header>
@@ -17,7 +17,7 @@
       <mat-card-content>
         <form [formGroup]="paymentForm" (ngSubmit)="pay()">
           <br>
-          <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-form-field appearance="outline" style="width: 90%;">
             <mat-label>Card Number</mat-label>
             <input matInput formControlName="cardNumber" type="text">
             <mat-error *ngIf="paymentForm.get('cardNumber')?.invalid">
@@ -27,7 +27,7 @@
           <br>
           <br>
           <div class="expiry-cvv">
-            <mat-form-field appearance="outline">
+            <mat-form-field appearance="outline" >
               <mat-label>Expiry Month</mat-label>
               <input matInput formControlName="expiryMonth" type="text">
               <mat-error *ngIf="paymentForm.get('expiryMonth')?.invalid">
