@@ -29,3 +29,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mdc-switch__track::after {
     background-color: green !important;
 }
+
+button.mat-mdc-extended-fab span.mdc-button__label {
+    gap: 0.2rem !important;
+}
