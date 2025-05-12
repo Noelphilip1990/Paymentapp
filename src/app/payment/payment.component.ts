@@ -58,6 +58,10 @@ export class PaymentComponent {
     }
   }
 
+  pressGive() {
+     this.snackBar.open('Wow Amazing!', 'Close', { duration: 3000 });
+  }
+
   getErrorMessage(controlName: string) {
     const control = this.paymentForm.get(controlName);
     if (control?.hasError('required')) {

@@ -1,5 +1,5 @@
 <div class="payment-container">
-  <mat-card>
+  <mat-card style="width: 98%;">
     <mat-card-content>
       
       <h2 class="example-h2">Choose Direction To Take</h2>
@@ -77,19 +77,19 @@
               <ng-container *ngIf="loading" class="spinner">
                 <mat-spinner diameter="20"></mat-spinner>
               </ng-container>
-              <ng-container *ngIf="!loading" style="display: flex; align-items: center; justify-content: center;">
+              <ng-container *ngIf="!loading" class="payandgive">
                 <mat-icon>favorite</mat-icon> PAY
               </ng-container>
             </button>
           </div>
           
           <div class="button-group">
-            <button mat-fab extended color="primary" type="submit" [disabled]="loading">
+            <button mat-fab extended color="primary" type="button" [disabled]="loading" (click)="pressGive()">
               <ng-container *ngIf="loading" class="spinner">
                 <mat-spinner diameter="20"></mat-spinner>
               </ng-container>
-              <ng-container *ngIf="!loading" style="display: flex; align-items: center; justify-content: center;">
-                <mat-icon>favorite</mat-icon> Give Away!
+              <ng-container *ngIf="!loading" class="payandgive">
+                <mat-icon>favorite</mat-icon> Give Away! <mat-icon class="wallet-icon">wallet</mat-icon>
               </ng-container>
             </button>
           </div>
