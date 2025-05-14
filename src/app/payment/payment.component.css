@@ -71,3 +71,33 @@
     align-items: center;
     justify-content: center;
   }
+
+  .svg-icon {
+    position: absolute;
+    top: 56%;
+    left: 1%;
+  }
+
+  .svg-icon2 {
+    position: absolute;
+    top: 56%;
+    right: 1%;
+  }
+
+  .svg-icon3 {
+    position: absolute;
+    top: 76%;
+    right: 1%;
+  }
+
+  .svg-icon1 {
+    position: absolute;
+    top: 86%;
+    left: 1%;
+  }
+
+   .svg-icon4 {
+    position: absolute;
+    top: 96%;
+    right: 1%;
+  }
